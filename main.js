@@ -31,7 +31,7 @@ function play() {
     let userValue = userInput.value;
 
     if (userValue < 1 || userValue > 50) {
-        resultArea.textContent = "1 ~ 50 숫자만 가능"
+        resultArea.textContent = "1~50 숫자입력"
         resultArea.style.color = 'orange'
 
         return;
