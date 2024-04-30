@@ -93,7 +93,7 @@ input[type='number'] {
 }
 
 .playContainer #result-area {
-    font-size: 2rem;
+    font-size: 1.8rem;
     height: 300px;
     display: flex;
     justify-content: center;
