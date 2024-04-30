@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,body {
+    height: 100%;
+    font-family:'GmarketSansMedium';
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox  */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+#container {    
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainText {
+    position: fixed;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgb(119, 119, 209);
+}
+
+.mainText p {
+    margin-left: 15px;
+}
+
+
+.playContainer {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.playContainer #result-area {
+    font-size: 1.2rem;
+}
+
+.playContainer #chance-area {
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: left;
+    width: 100%;
+}
+
+#user-input {
+    margin: 0 0 20px 0;
+    height: 50px;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+#user-input:focus {
+    outline: 0;
+}
+
+.playReset-button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.playReset-button button {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 15px 8px;
+    border: none;
+    color: #fff;
+    background-color: rgb(119, 119, 209);
+    margin-bottom: 12px;
+}
+
+#play-button {
+    margin-right: 3px;
+}
+
