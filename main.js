@@ -67,9 +67,9 @@ function play() {
      console.log(history)
     
     
-    if (chances == 0) {
-        resultArea.textContent = "땡!!!"
-    }
+    // if (chances < 1 ||  ) {
+    //     resultArea.textContent = "땡!!!"
+    // }
 
     if (chances < 1) {
         gameOver = true;
