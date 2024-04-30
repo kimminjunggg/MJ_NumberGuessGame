@@ -65,7 +65,6 @@ function play() {
 
     if (chances < 1) {
         gameOver = true;
-        resultArea.textContent = "땡!"
     } 
 
     if (gameOver == true) {
@@ -75,6 +74,7 @@ function play() {
 };
 
 function reset() {
+
     userInput.value = "";
     playButton.style.backgroundColor = 'rgb(119, 119, 209)';
     pickRandomNum();
@@ -84,6 +84,9 @@ function reset() {
     chances = 5;
     chancesArea.textContent = `남은 횟수:${chances}번`;
     history=[];
+    
+
+    
     
     
 
