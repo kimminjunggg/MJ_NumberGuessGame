@@ -7,12 +7,19 @@ let chances = 5;
 let gameOver = false;
 let chancesArea = document.getElementById("chance-area");
 let history = [];
+let startButton = document.getElementById("start-button");
+let startContainer = document.getElementById("start-container");
 
+startButton.addEventListener("click", start);
 playButton.addEventListener("click", play);
 resetButton.addEventListener("click", reset);
 userInput.addEventListener("focus", function() {
     userInput.value = "";
 })
+
+function start() {
+    startContainer.style.display = "none";
+}
 
 function pickRandomNum() {
     // 숫자 0 ~ 49 까지의 랜덤 숫자인데 +1을 함으로써 1 ~ 50까지의 랜덤 숫자가 됌
@@ -70,10 +77,15 @@ function play() {
 function reset() {
     userInput.value = "";
     playButton.style.backgroundColor = 'rgb(119, 119, 209)';
-
     pickRandomNum();
-    
     resultArea.textContent = "결과는!";
+    gameOver = false;
+    playButton.disabled = false;
+    chances = 5;
+    chancesArea.textContent = `남은 횟수:${chances}번`;
+    history=[];
+    
+    
 
     
 

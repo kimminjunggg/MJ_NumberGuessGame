@@ -7,28 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- 들어갔을때의 첫화면 -->
+    <div id="start-container">
+      <div class="start-mainText">
+        <button id="start-button">Game Start</button>
+      </div>
+    </div>
+
+    <!-- 시작하기 버튼 클릭 시 -->
     <div id="container">
         <div class="mainText">
             <p>Random Number Game</p>
         </div>
   
         <div class="playContainer">
-  
-          <div id="chance-area">남은 횟수:5번</div>
-          <input type="number" id="user-input" />
-  
-          
           <div id="result-area">결과는!?</div>
-
+          
+          <input type="number" id="user-input" />
+          <div id="chance-area">남은 횟수:5번</div>
+          
           <div class="playReset-button">
               <button id="play-button">GO</button>
               <button id="reset-button">RESET</button>
-          </div>
-
-          
-         
-  
-          
+          </div>          
         </div>
       </div>
     <script src="main.js"></script>
