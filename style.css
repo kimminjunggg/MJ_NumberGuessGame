@@ -160,14 +160,25 @@ input[type='number'] {
     margin-right: 3px;
 }
 
+@media screen and (max-width: 992px) {
+    #start-container .start-mainText  {
+        width: calc(100% - 220px);
+    }
+    
+}
+
 
 @media screen and (max-width: 600px) {
     #start-container .start-mainText  {
         width: calc(100% - 60px);
     }
 
+    #start-button {
+        font-size: 3rem;
+    }
+
     #start-container .start-mainText button {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .start-mainText .game-rule {

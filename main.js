@@ -51,10 +51,12 @@ function play() {
         resultArea.textContent = "👆👆👆";
     } else if (userValue > computerNum) {
         resultArea.textContent = "👇👇👇"
-    } else {
+    } else if (userValue == computerNum){
         resultArea.textContent = "🎉🎊🎉🎊"
         playButton.disabled = true;
         playButton.style.backgroundColor = 'gray';
+    } else {
+        resultArea.textContent = "땡!"
     }
 
     history.push(userValue);
@@ -66,6 +68,7 @@ function play() {
     if (chances < 1) {
         gameOver = true;
     } 
+
 
     if (gameOver == true) {
         playButton.disabled = true;
