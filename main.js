@@ -51,24 +51,25 @@ function play() {
         resultArea.textContent = "👆👆👆";
     } else if (userValue > computerNum) {
         resultArea.textContent = "👇👇👇"
-    } else if (userValue == computerNum){
+    } else {
         resultArea.textContent = "🎉🎊🎉🎊"
         playButton.disabled = true;
         playButton.style.backgroundColor = 'gray';
-    } else {
-        resultArea.textContent = "땡!"
     }
 
     history.push(userValue);
      console.log(history)
     
     
-    
+    if (chances == 0) {
+        resultArea.textContent = "땡!!!"
+    }
 
     if (chances < 1) {
         gameOver = true;
     } 
 
+    if (history.includes(userValue) )
 
     if (gameOver == true) {
         playButton.disabled = true;
