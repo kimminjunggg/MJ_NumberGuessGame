@@ -37,6 +37,10 @@ input[type='number'] {
     background-color:  rgb(119, 119, 209);
 }
 
+#main-text-click {
+    cursor: pointer;
+}
+
 #start-container .start-mainText {
     display: flex;
     width: calc(100% - 500px);
@@ -154,6 +158,7 @@ input[type='number'] {
     color: #fff;
     background-color: rgb(119, 119, 209);
     margin-bottom: 12px;
+    cursor: pointer;
 }
 
 #play-button {

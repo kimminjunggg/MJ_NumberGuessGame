@@ -9,6 +9,7 @@ let chancesArea = document.getElementById("chance-area");
 let history = [];
 let startButton = document.getElementById("start-button");
 let startContainer = document.getElementById("start-container");
+let mainTextClick = document.getElementById("main-text-click");
 
 startButton.addEventListener("click", start);
 playButton.addEventListener("click", play);
@@ -16,6 +17,11 @@ resetButton.addEventListener("click", reset);
 userInput.addEventListener("focus", function() {
     userInput.value = "";
 })
+mainTextClick.addEventListener("click", backStart);
+
+function backStart() {
+    startContainer.style.display = "block";
+}
 
 function start() {
     startContainer.style.display = "none";
