@@ -72,13 +72,6 @@ function reset() {
     playButton.style.backgroundColor = 'rgb(119, 119, 209)';
 
     pickRandomNum();
-    history = [];
-
-    chances = 5;
-    chancesArea.textContent = `남은 횟수:${chances}번`;
-
-    history.push(userValue);
-    console.log(history);
     
     resultArea.textContent = "결과는!";
 
