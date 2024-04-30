@@ -51,6 +51,7 @@ function play() {
     }
 
     history.push(userValue);
+     console.log(history)
     
     
     
@@ -68,8 +69,21 @@ function play() {
 
 function reset() {
     userInput.value = "";
+    playButton.style.backgroundColor = 'rgb(119, 119, 209)';
+
     pickRandomNum();
-    resultArea.textContent = "결과는!"
+    history = [];
+
+    chances = 5;
+    chancesArea.textContent = `남은 횟수:${chances}번`;
+
+    history.push(userValue);
+    console.log(history);
+    
+    resultArea.textContent = "결과는!";
+
+    
+
 }
 
 pickRandomNum();
