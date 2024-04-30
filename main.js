@@ -24,7 +24,7 @@ function play() {
     let userValue = userInput.value;
 
     if (userValue < 1 || userValue > 50) {
-        resultArea.textContent = "1부터 50까지 숫자를 입력하세요"
+        resultArea.textContent = "1 ~ 50 숫자만 가능"
         resultArea.style.color = 'orange'
 
         return;

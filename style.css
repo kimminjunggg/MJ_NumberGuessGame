@@ -63,7 +63,7 @@ input[type='number'] {
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .playContainer #result-area {
