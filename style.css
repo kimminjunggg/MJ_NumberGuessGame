@@ -51,6 +51,10 @@ input[type='number'] {
     flex-direction: column;
 }
 
+#start-button {
+    font-weight: bold;
+}
+
 
 
 #start-container .start-mainText button {
@@ -62,14 +66,14 @@ input[type='number'] {
 }
 
 .start-mainText .game-rule {
-    width: 80%;
+    width: 70%;
     font-size: 1.2rem;
     margin: 0 auto;
     margin-top: 50px;
     padding: 20px 30px;
     color: #fff;
     font-weight: 100;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
 }
 
 #container {   
