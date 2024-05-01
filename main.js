@@ -67,9 +67,7 @@ function play() {
      console.log(history)
     
     
-    if (chances = 0 || userValue != computerNum ) {
-        resultArea.textContent = "땡!!!"
-    }
+    
 
     if (chances < 1) {
         gameOver = true;
@@ -81,6 +79,7 @@ function play() {
         playButton.disabled = true;
         playButton.style.backgroundColor = 'gray';
     }
+
 };
 
 function reset() {
