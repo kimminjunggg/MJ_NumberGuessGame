@@ -58,7 +58,7 @@ function play() {
     } else if (userValue > computerNum) {
         resultArea.textContent = "👇👇👇"
     } else {
-        resultArea.textContent = "🎉🎊🎉🎊"
+        resultArea.textContent = "🎉🎊정답!🎉🎊"
         playButton.disabled = true;
         playButton.style.backgroundColor = 'gray';
     }
@@ -67,9 +67,9 @@ function play() {
      console.log(history)
     
     
-    // if (chances < 1 ||  ) {
-    //     resultArea.textContent = "땡!!!"
-    // }
+    if (chances = 0 || userValue != computerNum ) {
+        resultArea.textContent = "땡!!!"
+    }
 
     if (chances < 1) {
         gameOver = true;
